@@ -4,8 +4,11 @@ class IndecisionApp extends React.Component {
         return (
             <div>
                 <Header/>
+
                 <Action/>
+
                 <Options/>
+
                 <AddOptions/>
             </div>
         )
