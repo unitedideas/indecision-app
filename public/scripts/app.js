@@ -112,11 +112,7 @@ var Options = function (_React$Component4) {
                 'div',
                 null,
                 this.props.options.map(function (option) {
-                    return React.createElement(
-                        'p',
-                        { key: option },
-                        option
-                    );
+                    return React.createElement(Option, { key: option, optionText: option });
                 }),
                 this.props.options.length,
                 React.createElement(Option, null)
@@ -127,31 +123,8 @@ var Options = function (_React$Component4) {
     return Options;
 }(React.Component);
 
-var AddOptions = function (_React$Component5) {
-    _inherits(AddOptions, _React$Component5);
-
-    function AddOptions() {
-        _classCallCheck(this, AddOptions);
-
-        return _possibleConstructorReturn(this, (AddOptions.__proto__ || Object.getPrototypeOf(AddOptions)).apply(this, arguments));
-    }
-
-    _createClass(AddOptions, [{
-        key: 'render',
-        value: function render() {
-            return React.createElement(
-                'div',
-                null,
-                'Add Options'
-            );
-        }
-    }]);
-
-    return AddOptions;
-}(React.Component);
-
-var Option = function (_React$Component6) {
-    _inherits(Option, _React$Component6);
+var Option = function (_React$Component5) {
+    _inherits(Option, _React$Component5);
 
     function Option() {
         _classCallCheck(this, Option);
@@ -165,12 +138,36 @@ var Option = function (_React$Component6) {
             return React.createElement(
                 'div',
                 null,
-                'Option'
+                'Option: ',
+                this.props.optionText
             );
         }
     }]);
 
     return Option;
+}(React.Component);
+
+var AddOptions = function (_React$Component6) {
+    _inherits(AddOptions, _React$Component6);
+
+    function AddOptions() {
+        _classCallCheck(this, AddOptions);
+
+        return _possibleConstructorReturn(this, (AddOptions.__proto__ || Object.getPrototypeOf(AddOptions)).apply(this, arguments));
+    }
+
+    _createClass(AddOptions, [{
+        key: 'render',
+        value: function render() {
+            return React.createElement(
+                'div',
+                null,
+                'Add Option Component Here'
+            );
+        }
+    }]);
+
+    return AddOptions;
 }(React.Component);
 
 ReactDOM.render(React.createElement(IndecisionApp, null), document.getElementById('app'));
