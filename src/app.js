@@ -6,11 +6,8 @@ class IndecisionApp extends React.Component {
         return (
             <div>
                 <Header title={title} subtitle={subtitle}/>
-
                 <Action/>
-
                 <Options options={options}/>
-
                 <AddOptions/>
             </div>
         )
@@ -48,7 +45,6 @@ class Options extends React.Component {
                 {
                     this.props.options.map((option) => <Option key={option} optionText={option}/>)
                 }
-                <Option/>
             </div>
         )
     }
