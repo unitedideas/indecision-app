@@ -101,11 +101,6 @@ var Action = function (_React$Component3) {
     return Action;
 }(React.Component);
 
-// Add Remove all Button
-// Setup handleRemove -> alert some message
-// setup onClick to fire the method
-
-
 var Options = function (_React$Component4) {
     _inherits(Options, _React$Component4);
 
@@ -118,7 +113,7 @@ var Options = function (_React$Component4) {
     _createClass(Options, [{
         key: 'handleRemoveAll',
         value: function handleRemoveAll() {
-            alert('Removes all');
+            alert('handleRemoveAll');
         }
     }, {
         key: 'render',
@@ -175,12 +170,32 @@ var AddOptions = function (_React$Component6) {
     }
 
     _createClass(AddOptions, [{
+        key: 'handleAddOption',
+        value: function handleAddOption(e) {
+            e.preventDefault();
+            var option = e.target.elements.option.value.trim();
+
+            if (option) {
+                alert(option);
+            }
+        }
+    }, {
         key: 'render',
         value: function render() {
             return React.createElement(
                 'div',
                 null,
-                'Add Option Component Here'
+                React.createElement(
+                    'form',
+                    { onSubmit: this.handleAddOption },
+                    'name: ',
+                    React.createElement('input', { type: 'text', name: 'option' }),
+                    React.createElement(
+                        'button',
+                        null,
+                        'Add Option'
+                    )
+                )
             );
         }
     }]);

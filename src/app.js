@@ -42,14 +42,9 @@ class Action extends React.Component {
 }
 
 
-// Add Remove all Button
-// Setup handleRemove -> alert some message
-// setup onClick to fire the method
-
-
 class Options extends React.Component {
     handleRemoveAll() {
-        alert('Removes all')
+        alert('handleRemoveAll')
     }
 
     render() {
@@ -73,17 +68,28 @@ class Option extends React.Component {
             <div>
                 option: {this.props.optionText}
             </div>
-
         )
     }
 }
 
 
 class AddOptions extends React.Component {
+    handleAddOption(e) {
+        e.preventDefault();
+        const option = e.target.elements.option.value.trim();
+
+        if (option) {
+            alert(option)
+        }
+    }
+
     render() {
         return (
             <div>
-                Add Option Component Here
+                <form onSubmit={this.handleAddOption}>
+                    name: <input type="text" name='option'/>
+                    <button>Add Option</button>
+                </form>
             </div>
         )
     }
