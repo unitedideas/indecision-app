@@ -8,42 +8,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-// let count = 0;
-//
-// const addOne = () => {
-//     count++;
-//     renderCounterApp()
-// };
-//
-// const minusOne = () => {
-//     count--;
-//     renderCounterApp();
-// };
-//
-// const reset = () => {
-//     count = 0
-//     renderCounterApp();
-// };
-//
-//
-// const appRoot = document.getElementById('app');
-//
-// const renderCounterApp = () => {
-//     const templateTwo = (
-//         <div>
-//             <h1>Count: {count}</h1>
-//             <button onClick={addOne}>+1</button>
-//             <button onClick={minusOne}>-1</button>
-//             <button onClick={reset}>Reset</button>
-//         </div>
-//     );
-//     ReactDOM.render(templateTwo, appRoot);
-//
-// };
-//
-// renderCounterApp();
-
-
 var Counter = function (_React$Component) {
     _inherits(Counter, _React$Component);
 
