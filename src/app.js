@@ -1,6 +1,3 @@
-// stateless functional component
-
-
 class IndecisionApp extends React.Component {
     constructor(props) {
         super(props);
@@ -19,7 +16,6 @@ class IndecisionApp extends React.Component {
             };
         });
     }
-
 
 
     handlePick() {
@@ -107,7 +103,7 @@ const Options = (props) => {
 const Option = (props) => {
     return (
         <div>
-            option: {props.optionText}
+            {props.optionText}
         </div>
     );
 };
