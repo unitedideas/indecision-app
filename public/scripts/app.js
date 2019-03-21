@@ -20,7 +20,7 @@ var Counter = function (_React$Component) {
         _this.handleMinusOne = _this.handleMinusOne.bind(_this);
         _this.handleReset = _this.handleReset.bind(_this);
         _this.state = {
-            count: props.counter
+            count: props.count
         };
         return _this;
     }
@@ -61,7 +61,7 @@ var Counter = function (_React$Component) {
                 React.createElement(
                     'h1',
                     null,
-                    'Counter: ',
+                    'Count: ',
                     this.state.count
                 ),
                 React.createElement(
