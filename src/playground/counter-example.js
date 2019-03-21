@@ -42,7 +42,7 @@ class Counter extends React.Component {
 }
 
 Counter.defaultProps = {
-  count: 0
+  count: 100
 };
 
-ReactDOM.render(<Counter/>, document.getElementById('app'));
+ReactDOM.render(<Counter />, document.getElementById('app'));

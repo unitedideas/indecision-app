@@ -87,7 +87,7 @@ var Counter = function (_React$Component) {
 }(React.Component);
 
 Counter.defaultProps = {
-    count: 0
+    count: 100
 };
 
 ReactDOM.render(React.createElement(Counter, null), document.getElementById('app'));
